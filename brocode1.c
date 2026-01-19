@@ -1,22 +1,22 @@
 # include <stdio.h>
 int main(){
-        int x;//declaration
-        x = 123;//initialization
-        int y = 321;//declaration + initialization
-
         int age = 21;//integer
         float gpa = 2.05; // floating point number
         char grade = 'c';
         char name[] = "ritajose";//array of characters cuz variable type in c doesn't include string
         //string is an object c laguage is not object oriented language doesn't support string
-        printf("%d\n",age);
-        printf("%c\n",grade);
+        printf("you are %d years old\n",age);
+        printf("your grade is %c\n",grade);
         printf("%s\n",name);
-        /*output:
-        21
-        c
-        ritajose*/
+        printf("Hello %s\n", name);
+        printf("your age is %d\n", age);
+        printf("your gpa is %f\n", gpa);
+        return 0;
 }
-// how to run c program:
-// clang brocode.c -o brocode
-// ➜  myPROJECTR ./brocode  
+/*output:
+you are 21 years old
+your grade is c
+ritajose
+Hello ritajose
+your age is 21
+your gpa is 2.050000 */
